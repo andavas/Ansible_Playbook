@@ -1,0 +1,8 @@
+---
+- name: Verificar instalação do Node JS
+  hosts: slaves
+  tasks: 
+  - name: Node deve estar instalado  
+    package:
+      name: nodejs
+      state: present 
